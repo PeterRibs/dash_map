@@ -19,8 +19,6 @@ owner_data = {
     "Owner Name": [names.get_full_name() for i in range(1, 151)],
 }
 
-print(owner_data)
-
 # Create the DataFrame for property owners
 owner_df = pd.DataFrame(owner_data)
 

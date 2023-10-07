@@ -16,7 +16,7 @@ def haversine_distance(lat1, lon1, lat2, lon2):
 def calculate_distance(lat, long, input_latitude, input_longitude):
     return haversine_distance(float(lat), float(long), input_latitude, input_longitude)
 
-def producers_number(dataset, distancia): 
+def producers_number(dataset, distance): 
     dict_result = {}
-    dict_result[distancia] = dataset[dataset.distancia <= distancia].__len__()
+    dict_result[distance] = dataset[dataset.distance <= distance].__len__()
     return dict_result
