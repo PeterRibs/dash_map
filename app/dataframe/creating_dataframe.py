@@ -7,9 +7,9 @@ import names
 # Generate random data for 150 rural properties
 property_data = {
     "Property Name": ["Property " + str(i) for i in range(1, 151)],
-    "Latitude": [random.uniform(-33.75, 5.25) for _ in range(150)],  # Rough latitude range of Brazil
-    "Longitude": [random.uniform(-73.98, -34.80) for _ in range(150)],  # Rough longitude range of Brazil
-    "Area (hectares)": [random.uniform(10, 1000) for _ in range(150)],
+    "Latitude": [round(random.triangular(-20, -10), 5) for _ in range(150)],
+    "Longitude": [round(random.triangular(-55, -40), 5) for _ in range(150)],
+    "Area (hectares)": [round(random.uniform(10, 1000), 2) for _ in range(150)],
     "Solar Energy": [random.choice(["Yes", "No"]) for _ in range(150)],
     "Number of Cows": [random.randint(0, 100) for _ in range(150)],
 }
