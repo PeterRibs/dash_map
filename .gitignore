@@ -1,0 +1,5 @@
+.git
+.cache
+.env
+./app/dataframe/teste.ipynb
+./app/testando.ipynb

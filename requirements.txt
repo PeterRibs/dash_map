@@ -1,0 +1,8 @@
+pandas
+dash
+dash_auth
+dash_bootstrap_components
+numpy
+plotly
+datetime
+folium
